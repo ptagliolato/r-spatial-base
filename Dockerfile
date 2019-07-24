@@ -48,5 +48,6 @@ RUN R -e "install.packages(c('DT'))"
 RUN R -e "install.packages(c('raster','gdalUtils','mapview','maptools','ggmap'))"
 RUN R -e "install.packages(c('xslt','XML','xml2'))"
 RUN R -e "install.packages(c('rwfs',''))"
+RUN R -e "install.packages('elevatr')"
 
 #EXPOSE 3838
