@@ -48,6 +48,5 @@ RUN R -e "install.packages(c('DT'))"
 RUN R -e "install.packages(c('raster','gdalUtils','mapview','maptools','ggmap'))"
 RUN R -e "install.packages(c('xslt','XML','xml2'))"
 RUN R -e "install.packages(c('rwfs',''))"
-#COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838
