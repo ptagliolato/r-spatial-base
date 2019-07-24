@@ -1,6 +1,10 @@
 # r-spatial-base
 Base docker image to containerize geospatial R-shiny applications.
 
+## Build docker image
+    docker build -t ptagliolato/r-spatial-base:<tag> .
+
+## Example
 Standalone usage example (e.g. to launch an interactive R shell): 
 
     sudo docker run -it ptagliolato/r-spatial-base:1.0.0 R --vanilla
