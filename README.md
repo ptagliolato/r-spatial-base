@@ -6,7 +6,7 @@ Standalone usage example (e.g. to launch an interactive R shell):
     sudo docker run -it ptagliolato/r-spatial-base:1.0.0 R --vanilla
 
 ------------------------------
-###Installed packages:
+### Installed packages:
 
     docker run ptagliolato/r-spatial-base:1.0.0 "R" "-e" "ppp<-installed.packages(); library(dplyr); paste(ppp[,1],ppp[,3],sep=':') %>% sort() %>% paste(collapse='\n') %>% cat" --vanilla
 
