@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     libssh2-1-dev \
     libssl1.0.0
 
-# system library dependency for the euler app
+# system library dependenciesy
 RUN apt-get update && apt-get install -y \
     software-properties-common
 
@@ -29,7 +29,7 @@ RUN apt-get update && apt-get install -y \
 # basic shiny functionality
 RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-project.org/')"
 
-# install dependencies of the app
+# installi R libraries
 RUN R -e "install.packages('Rmpfr', repos='https://cloud.r-project.org/')"
 RUN R -e "install.packages('devtools')"
 RUN R -e "install.packages('shinyjs')"
@@ -49,4 +49,4 @@ RUN R -e "install.packages(c('raster','gdalUtils','mapview','maptools','ggmap'))
 RUN R -e "install.packages(c('xslt','XML','xml2'))"
 RUN R -e "install.packages(c('rwfs',''))"
 
-EXPOSE 3838
+#EXPOSE 3838
