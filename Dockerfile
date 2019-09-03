@@ -24,7 +24,8 @@ RUN apt-get update && apt-get install -y \
     libudunits2-dev \
     libgdal-dev \
     libgeos-dev \
-    libproj-dev 
+    libproj-dev \
+    gdal-bin
 
 # basic shiny functionality
 RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-project.org/')"
